@@ -1,18 +1,17 @@
+
 {
-    "name": "tib-backgammon-server",
-    "version": "1.0.0",
-    "private": true,
-    "engines": {
-      "node": ">=14"
-    },
-    "main": "index.js",
-    "scripts": {
-      "start": "node index.js"
-    },
-    "dependencies": {
-      "express": "^4.18.2",
-      "cors": "^2.8.5",
-      "boardgame.io": "^0.50.2"
-    }
+  "name": "tib-backgammon-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",               // ← enables ESM
+  "engines": { "node": ">=14" },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "boardgame.io": "^0.50.2"
   }
-  
+}
