@@ -1,4 +1,5 @@
-import { Game, TurnOrder, INVALID_MOVE } from 'boardgame.io';
+import { Game, TurnOrder, INVALID_MOVE } from 'boardgame.io/dist/esm/core.js';
+
 
 // Simplified Backgammon logic (stubbed)
 const Engine = {
