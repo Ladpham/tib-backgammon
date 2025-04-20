@@ -1,4 +1,4 @@
-import { Game, TurnOrder, INVALID_MOVE } from 'boardgame.io/core';
+import { Game, TurnOrder, INVALID_MOVE } from 'boardgame.io';
 
 // Simplified Backgammon logic (stubbed)
 const Engine = {
