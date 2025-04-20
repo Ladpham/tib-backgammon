@@ -2,10 +2,8 @@
   "name": "tib-backgammon-server",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "engines": {
-    "node": ">=14"
-  },
+  "engines": { "node": ">=14" },
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
