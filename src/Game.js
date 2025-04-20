@@ -1,4 +1,4 @@
-import { Game, TurnOrder, INVALID_MOVE } from 'boardgame.io/dist/esm/core.js';
+import { Game, TurnOrder, INVALID_MOVE } from 'boardgame.io/dist/esm/core/index.js';
 
 
 // Simplified Backgammon logic (stubbed)
