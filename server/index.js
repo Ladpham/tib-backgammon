@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { Server } = require('boardgame.io/server');
+const { Server } = require('boardgame.io/dist/cjs/server');
 const { TIBGame } = require('./Game');
 
 const app = express();
