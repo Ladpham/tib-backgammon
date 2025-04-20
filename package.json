@@ -10,7 +10,7 @@
       "deploy": "gh-pages -d build"
     },
     "dependencies": {
-      "boardgame.io": "^0.53.0",
+      "boardgame.io": "^0.50.2",
       "react": "^18.0.0",
       "react-dom": "^18.0.0",
       "react-scripts": "5.0.1"
