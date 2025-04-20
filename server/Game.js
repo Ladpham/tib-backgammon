@@ -1,4 +1,4 @@
-const { Game, TurnOrder, INVALID_MOVE } = require('boardgame.io/core');
+const { Game, TurnOrder, INVALID_MOVE } = require('boardgame.io/dist/cjs/core');
 
 // Simplified Backgammon engine
 const Engine = {
