@@ -14,7 +14,7 @@
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
     "boardgame.io": "^0.50.2",
-    "@boardgame.io/p2p": "^0.50.2"
+    "@boardgame.io/p2p": "^0.4.4"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
