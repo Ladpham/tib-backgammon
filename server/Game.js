@@ -1,6 +1,10 @@
 // server/Game.js
-const { Game, TurnOrder, INVALID_MOVE } = require('boardgame.io/dist/cjs/core.js');
 
+// Pull in the game‐definition API from the root CJS export
+const bgio = require('boardgame.io');
+const { Game, TurnOrder, INVALID_MOVE } = bgio.core;
+
+// (Your simplified Backgammon engine)
 const Engine = {
   initialBoard() {
     return {
@@ -19,7 +23,7 @@ const Engine = {
     return true;
   },
   applyMove(G, player, from, to) {
-    // TODO: mutate G.board
+    // TODO: implement board mutations
   },
   computeMetrics(history, rolls) {
     const total = history.length;
@@ -41,7 +45,9 @@ const TIBGame = Game({
     currentRoll: null,
     matchTarget: 5,
   }),
+
   turn: { order: TurnOrder.DEFAULT },
+
   moves: {
     RollDice: {
       move: ({ G, ctx }) => {
@@ -58,11 +64,13 @@ const TIBGame = Game({
       },
     },
   },
+
   endIf: ({ G }) => {
     const { off } = G.board;
     if (off.p1 >= G.matchTarget) return { winner: 'p1' };
     if (off.p2 >= G.matchTarget) return { winner: 'p2' };
   },
+
   onEnd: ({ G, result }) => {
     const { pr, luck } = Engine.computeMetrics(G.history, G.rolls);
     console.log(`🏆 Winner: ${result.winner}, PR=${pr}, Luck=${luck}`);
